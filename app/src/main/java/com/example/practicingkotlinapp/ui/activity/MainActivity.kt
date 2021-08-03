@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
     fun updateMovies(){
         viewModel.getMovieList().observe(this, Observer<MovieResponse>{
-            if (it.movies != null){
+            if (it != null){
                 moviesAdapter.movieList = it.movies
                 moviesAdapter.notifyDataSetChanged()
             }

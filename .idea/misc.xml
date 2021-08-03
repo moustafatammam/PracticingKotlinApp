@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/repositories/practicingkotlinapp/app/src/main/res/drawable/rectangle.xml" value="0.4453125" />
         <entry key="..\:/repositories/practicingkotlinapp/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/repositories/practicingkotlinapp/app/src/main/res/layout/view_movie.xml" value="0.42916666666666664" />
+        <entry key="..\:/repositories/practicingkotlinapp/app/src/main/res/layout/view_movie.xml" value="0.2" />
       </map>
     </option>
   </component>
