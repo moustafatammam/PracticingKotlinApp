@@ -6,6 +6,6 @@ import retrofit2.http.GET
 
 interface MoviesService {
 
-    @GET("cars")
+    @GET("movie/popular")
     fun getMovies(): Observable<MovieResponse>
 }
