@@ -29,5 +29,13 @@ class MoviesAdapter: RecyclerView.Adapter<MoviesAdapter.MoviesViewHolder>() {
 
     }
 
+    fun addData(listItems: ArrayList<Movie>) {
+        movieList.addAll(listItems)
+    }
+
+    fun updateData(listItems: ArrayList<Movie>) {
+        movieList.addAll(listItems)
+    }
+
 
 }

@@ -12,14 +12,17 @@ import io.reactivex.schedulers.Schedulers
 class MoviesViewModel: ViewModel() {
 
     var moviesLiveData: MutableLiveData<MovieResponse> = MutableLiveData()
+    var isLoading: Boolean = false
+
+    var page: Int = 1
 
     fun getMovieList(): MutableLiveData<MovieResponse>{
         return moviesLiveData
     }
 
-    fun callGetMovies(){
+    fun callGetMovies(page: Int){
         val apiClient = ApiClient.buildMoviesService()
-        apiClient.getMovies()
+        apiClient.getMovies(page)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(getMovieListObserver())
